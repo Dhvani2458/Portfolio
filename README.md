@@ -8,7 +8,7 @@ Welcome to my personal portfolio website! This portfolio showcases my technical 
 
 ## 🌐 Live Demo
 
-🔗 **Portfolio:** *(Add your deployed portfolio link here)*
+🔗 **Portfolio:** *https://dhvani-tandel.netlify.app*
 
 ---
 
@@ -154,10 +154,10 @@ Computer Science Student | Full-Stack Developer | Python Programmer | Cybersecur
 
 ## 📬 Connect With Me
 
-* 🌐 Portfolio: *(Add Portfolio Link)*
-* 💼 LinkedIn: *(Add LinkedIn Profile)*
-* 💻 GitHub: *(Add GitHub Profile)*
-* 📧 Email: *(Add Your Email)*
+* 🌐 Portfolio: *https://dhvani-tandel.netlify.app/*
+* 💼 LinkedIn: *www.linkedin.com/in/dhvani-tandel-231598358*
+* 💻 GitHub: *https://github.com/Dhvani2458*
+* 📧 Email: *dhvani2548@gmail.com*
 
 ---
 
