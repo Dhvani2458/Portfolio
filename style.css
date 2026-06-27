@@ -387,12 +387,12 @@ body {
 }
 
 .resume-download:hover{
-    background:#998bff;
-    color: rgb(16, 16, 17);
+    background: white;
+    color: black;
 }
 
 .resume-close:hover{
-    background:#998bff;
+    background:white;
     color: black;
 }
 
