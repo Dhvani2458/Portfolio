@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dhvani Tandel | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ============================================================
+     HTML
+============================================================ -->
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Dhvani Tandel<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#testimonials">Experience</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Skills</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#testimonials" onclick="closeMenu()">Experience</a>
+  <a href="#contact" onclick="closeMenu()">Contact →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Available for Internship</p>
+      <h1 class="hero-name">Dhvani<br><em>Tandel</em></h1>
+      <p class="hero-typewriter">I'm a <span id="changing-text"> </span>
+      </p>
+      <p class="hero-desc">
+        I’m a student developer focused on building responsive websites, interactive applications, and practical tech projects. I’m passionate about learning, experimenting, and growing in the fields of development and cybersecurity.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-secondary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Let's Talk</a>
+        <a href="#resume" class="btn-secondary" onclick="openResume()">View Resume</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">20<span>+</span></div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">4<span>+</span></div>
+          <div class="stat-label">Internships</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">10<span>+</span></div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100<span>%</span></div>
+          <div class="stat-label">Learning</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring">
+        <div class="hero-photo-inner">
+          <img src="image1.png" alt="Dhvani Tandel"> 
+        </div>
+      </div>
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Open to work
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label reveal">Who I am</div>
+  <h2 class="section-title reveal">Turning vision into<br>digital reality</h2>
+  <div class="about-grid">
+    <div class="about-copy reveal">
+      <p>Hi! I'm <strong>Dhvani Tandel</strong>, a passionate student developer with a strong interest in web development, Python Programming and cybersecurity. I enjoy building projects that are practical, creative, and designed to solve real-world problems through technology.</p>
+      <p>My approach combines <strong>clean design, logical problem-solving, and continuous learning</strong> every project is an opportunity to improve, experiment, and create something meaningful. From interactive web applications to cybersecurity-focused tools, I love turning ideas into working solutions through code.</p>
+      <p>I’m currently exploring different areas of development, strengthening my technical skills, and working on projects that help me grow as a developer. I’m especially interested in creating applications that are user-friendly, functional, and impactful.</p>
+      <div class="about-facts">
+        <div class="fact-chip"><i class="fas fa-map-marker-alt"></i> Gujarat, India</div>
+        <div class="fact-chip"><i class="fas fa-graduation-cap"></i> B.Tech IT</div>
+        <div class="fact-chip"><i class="fas fa-language"></i> English, Hindi, Gujarati</div>
+        <div class="fact-chip"><i class="fa-solid fa-user-shield"></i> Developer & Cybersecurity</div>
+      </div>
+    </div>
+    <div class="skills-side reveal">
+      <div class="skills-grid" id="skillsGrid">
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>HTML / CSS</span><span>93%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="93"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Python</span><span>89%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="89"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Flask</span><span>85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Java</span><span>75%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="75"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>JavaScript</span><span>70%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="70"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>React.js</span><span>65%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-w="65"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label reveal">My Skills</div>
+  <h2 class="section-title reveal">Technologies I<br>Work With</h2>
+  <p class="section-sub reveal"> I enjoy building secure, scalable, and user-friendly applications while continuously learning new technologies to solve real-world problems.</p>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="fas fa-code"></i></div>
+      <h3>Web Development</h3>
+      <p>Building responsive, interactive, and user-friendly websites using modern web technologies with a focus on clean design and functionality.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="fa-brands fa-python"></i></div>
+      <h3>Python / Flask Projects</h3>
+      <p>Building practical applications and problem-solving projects using Python, including automation tools, logic-based systems, and interactive programs.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="fa-solid fa-user-shield"></i></div>
+      <h3>Cyber Security</h3>
+      <p>Working on cybersecurity-focused projects such as secure applications, network analysis tools, and security-based problem-solving solutions.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+      <h3>Frontend + Interactive Projects</h3>
+      <p>Creating visually appealing interfaces with HTML, CSS, JavaScript, and React to deliver smooth and engaging user experiences.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+      <h3>Mobile Apps</h3>
+      <p>Developing mobile application projects with a focus on usability, functionality, and creating seamless digital experiences across devices.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+      <h3>Learning / building practical student projects</h3>
+      <p>Designing projects that balance functionality with a clean and structured interface, ensuring a better overall user experience.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label reveal">My work</div>
+  <h2 class="section-title reveal">Selected projects</h2>
+  <p class="section-sub reveal">A collection of projects built around cybersecurity, Python, web development, and practical problem-solving.</p>
+
+  <div class="projects-filter reveal">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="python">Python</button>
+    <button class="filter-btn" data-filter="cybertool">Cyber Tools</button>
+    <button class="filter-btn" data-filter="web">Web Page</button>
+  </div>
+
+  <div class="projects-grid" id="projectsGrid">
+    <div class="project-card reveal" data-cat="python cybertool">
+      <div class="project-thumb c1">🔐</div>
+      <div class="project-body">
+        <div class="project-tags"><span class="tag">Python</span><span class="tag">Cyber-Security</span><span class="tag">Encryption</span></div>
+        <h3>Steganography Tool</h3>
+        <p>A steganography-based security project designed to hide secret information inside digital media while preserving the original appearance of the file. Built to explore secure communication and data concealment techniques through practical implementation.</p>
+        <div class="project-links">
+          <a href="https://steganography-tool-7ba4.onrender.com" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="https://github.com/Dhvani2458/Steganography" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="python web">
+      <div class="project-thumb c2">🤖</div>
+      <div class="project-body">
+        <div class="project-tags"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Interative App</span></div>
+        <h3>Mind-Reader Chatbot</h3>
+        <p>An interactive chatbot game that simulates a mind-reading experience using logic-driven conversation flow and decision-based responses. Built to combine creativity, user interaction, and problem-solving through a web-based chatbot interface.</p>
+        <div class="project-links">
+          <a href="https://mindreader-chatbot.onrender.com" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="https://github.com/Dhvani2458/MindReader_Chatbot" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="cybertool python">
+      <div class="project-thumb c3">🛡️</div>
+      <div class="project-body">
+        <div class="project-tags"><span class="tag">Web Security</span><span class="tag">Python</span><span class="tag">Cyber Security</span></div>
+        <h3>Personal Firewall</h3>
+        <p>A firewall-based security project developed to monitor, filter, and control suspicious or unwanted traffic. Created to explore secure application behavior, rule-based filtering, and the practical implementation of defensive security concepts.</p>
+        <div class="project-links">
+          <a href="https://github.com/Dhvani2458/Personal-firewall" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="python web">
+      <div class="project-thumb c4">💻</div>
+      <div class="project-body">
+        <div class="project-tags"><span class="tag">Python</span><span class="tag">Programming</span><span class="tag">Logic</span></div>
+        <h3>Natural-Code Language</h3>
+        <p>A project focused on converting natural language-style input into code-oriented logic or structured programming output. Built to explore how human-readable instructions can be interpreted into computational steps, combining problem-solving, language understanding, and programming concepts.</p>
+        <div class="project-links">
+          <a href="https://natural-language-to-code-language.onrender.com" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="https://github.com/Dhvani2458/Natural-Language-to-code-language" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="cybertool web python">
+      <div class="project-thumb c5">🖼️</div>
+      <div class="project-body">
+        <div class="project-tags"><span class="tag">Encrytion</span><span class="tag">Security Tool</span><span class="tag">JavaScript</span></div>
+        <h3>Image Encryption Tool</h3>
+        <p>A security-focused project that applies encryption concepts to protect image data from unauthorized access. Built to demonstrate how encryption techniques can be applied beyond text-based content in practical digital security use cases.</p>
+        <div class="project-links">
+          <a href="https://image-encryption-d5so.onrender.com" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="https://github.com/Dhvani2458/Image-Encryption" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-cat="cybertool python">
+      <div class="project-thumb c6">🔡</div>
+      <div class="project-body">
+        <div class="project-tags"><span class="tag">Python</span><span class="tag">Cryptography</span><span class="tag">Security</span></div>
+        <h3>Caesar Cipher</h3>
+        <p>A classic encryption-based project that implements the Caesar Cipher technique to encode and decode text messages. Developed to demonstrate fundamental cryptography concepts and strengthen understanding of basic security algorithms.</p>
+        <div class="project-links">
+          <a href="https://caesar-cipher-nloc.onrender.com" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="https://github.com/Dhvani2458/Caesar-Cipher" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TESTIMONIALS -->
+<!-- EXPERIENCE / INTERNSHIPS / CERTIFICATIONS -->
+<section id="testimonials">
+  <div class="section-label reveal">Experience</div>
+  <h2 class="section-title reveal">Internships & certifications</h2>
+  <p class="section-sub reveal">
+    Practical experience built through internships, programming work, cybersecurity projects, and continuous learning.
+  </p>
+
+  <div class="testimonials-grid">
+
+    <div class="testi-card reveal">
+      <div class="testi-quote"><i class="fas fa-shield-halved"></i></div>
+      <div class="testi-author">
+        <div class="testi-avatar">PI</div>
+        <div class="testi-info">
+          <strong>Prodigy InfoTech</strong>
+          <span>Cybersecurity Intern</span>
+          <div class="testi-stars">15 May 2025 – 15 June 2025</div>
+        </div>
+      </div>
+      <ul class="exp-list">
+    <li>Worked on practical cybersecurity tasks and security-focused projects.</li>
+    <li>Applied concepts of cryptography, network security, and ethical hacking.</li>
+    <li>Strengthened analytical thinking through hands-on security challenges.</li>
+    <li>Gained practical exposure to real-world cybersecurity workflows.</li>
+  </ul>
+  <div class="experience-links">
+    <button class="exp-btn" onclick="openCertificate('/certificates/Prodigy.jpg')">
+        <i class="fas fa-award"></i> View Internship Certificate
+    </button>
+  </div>
+      
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-quote"><i class="fas fa-code"></i></div>
+      <div class="testi-author">
+        <div class="testi-avatar">OI</div>
+        <div class="testi-info">
+          <strong>Oasis Infobyte</strong>
+          <span>Python Programming Intern</span>
+          <div class="testi-stars">5 July 2025 – 15 August 2025</div>
+        </div>
+      </div>
+      <ul class="exp-list">
+    <li>Developed Python applications through project-based learning.</li>
+    <li>Improved programming logic and problem-solving skills.</li>
+    <li>Worked with Python libraries to build practical solutions.</li>
+    <li>Enhanced coding practices by implementing real-world projects.</li>
+</ul>
+<div class="experience-links">
+    <button class="exp-btn" onclick="openCertificate('/certificates/Oasis.png')">
+        <i class="fas fa-award"></i> View Internship Certificate
+    </button>
+</div>
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-quote"><i class="fas fa-laptop-code"></i></div>
+      <div class="testi-author">
+        <div class="testi-avatar">NI</div>
+        <div class="testi-info">
+          <strong>Navodita Infotech</strong>
+          <span>.NET Intern</span>
+          <div class="testi-stars">20 October 2025 – 19 November 2025</div>
+        </div>
+      </div>
+      <ul class="exp-list">
+    <li>Learned the fundamentals of .NET application development.</li>
+    <li>Worked on practical development tasks and implementation workflows.</li>
+    <li>Balanced internship responsibilities alongside academic studies.</li>
+    <li>Gained exposure to professional software development practices.</li>
+</ul>
+<div class="experience-links">
+    <button class="exp-btn" onclick="openCertificate('certificates/Navodita.png')">
+        <i class="fas fa-award"></i> View Internship Certificate
+    </button>
+</div>
+      
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-quote"><i class="fas fa-user-shield"></i></div>
+      <div class="testi-author">
+        <div class="testi-avatar">CT</div>
+        <div class="testi-info">
+          <strong>Codec Technology</strong>
+          <span>Cybersecurity Intern</span>
+          <div class="testi-stars">17 January 2026 – 17 February 2026</div>
+        </div>
+      </div>
+      <ul class="exp-list">
+    <li>Participated in cybersecurity-focused projects and learning activities.</li>
+    <li>Improved knowledge of secure application development principles.</li>
+    <li>Practiced identifying and understanding common security risks.</li>
+    <li>Strengthened practical skills through hands-on implementation.</li>
+</ul>
+<div class="experience-links">
+    <button class="exp-btn" onclick="openCertificate('certificates/Codec.png')">
+        <i class="fas fa-award"></i> View Internship Certificate
+    </button>
+</div>
+    </div>
+
+    <div class="testi-card reveal">
+      <div class="testi-quote"><i class="fas fa-certificate"></i></div>
+      <div class="testi-author">
+        <div class="testi-avatar">CL</div>
+        <div class="testi-info">
+          <strong>Continuous Learning</strong>
+          <span>Projects • Practice • Certifications</span>
+          <div class="testi-stars">Ongoing</div>
+        </div>
+      </div>
+      <ul class="exp-list">
+    <li>Built projects in Python, web development, mobile apps, and cybersecurity.</li>
+    <li>Completed certifications to expand technical knowledge.</li>
+    <li>Continuously explored new technologies through practical implementation.</li>
+    <li>Focused on learning by building real-world applications and tools.</li>
+</ul>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label reveal">Get in touch</div>
+  <h2 class="section-title reveal">Let's build something<br>great together</h2>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <p>Have a project in mind? I'm always open to discussing new opportunities, creative ideas, or just saying hi.</p>
+      <div class="contact-links">
+        <a href="mailto:dhvani2548@gamil.com" class="contact-link-item">
+          <i class="fas fa-envelope"></i>
+          dhvani2548@gamil.com
+        </a>
+        <a href="tel:7435006539" class="contact-link-item">
+          <i class="fas fa-phone"></i>
+          +91-743500639
+        </a>
+        <a href="https://www.google.com/maps/place//@20.7693127,72.9820567,16.71z?entry=ttu&g_ep=EgoyMDI2MDYyMi4wIKXMDSoASAFQAw%3D%3D" class="contact-link-item">
+          <i class="fas fa-map-marker-alt"></i>
+          233, Aradhna Society, Dhakvada, Behind Jalaram Society, Bilimora,Gujarat.
+        </a>
+        <a href="https://www.linkedin.com/in/dhvani-tandel-231598358" class="contact-link-item">
+          <i class="fab fa-linkedin"></i>
+          linkedin.com/Dhvani-Tandel
+        </a>
+        <a href="https://github.com/Dhvani2458" class="contact-link-item">
+          <i class="fab fa-github"></i>
+          github.com/Dhvani-Tandel
+        </a>
+      </div>
+    </div>
+    <form class="contact-form reveal" id="contactForm" onsubmit="return false;">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First name</label>
+          <input type="text" id="fname" placeholder="Dhvani" />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" placeholder="Tandel" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Dhvani@example.com" />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Project enquiry" />
+      </div>
+      <div class="form-group">
+        <label for="msg">Message</label>
+        <textarea id="msg" rows="5" placeholder="Tell me about your project..."></textarea>
+      </div>
+      <button type="submit" class="btn-send" onclick="sendMessage()">
+        Send Message <i class="fas fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Certificate Popup -->
+
+<div id="certificateModal" class="certificate-modal">
+
+    <div class="certificate-container">
+
+        <button class="close-btn" onclick="closeCertificate()">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
+
+        <img id="certificateImage" src="" alt="Certificate">
+
+        <iframe
+            id="certificatePdf"
+            style="display:none;"
+            frameborder="0">
+        </iframe>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Dhvani<span>.</span></div>
+  <p class="footer-copy">© 2026 Dhvani Tandel. All rights reserved.</p>
+  <div class="footer-socials">
+    <a href="https://github.com/Dhvani2458" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/dhvani-tandel-231598358" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</footer>
+
+<!-- Resume Popup -->
+<div id="resumeModal" class="resume-modal">
+    <div class="resume-container">
+        <button class="resume-close" onclick="closeResume()">
+            <i class="fas fa-arrow-left"></i>
+            Back
+        </button>
+        <iframe
+            src="resume/Dhvani_Tandel.pdf"
+            id="resumeFrame">
+        </iframe>
+        <a href="resume/Dhvani_Tandel.pdf"
+            download
+            class="resume-download">
+            <i class="fas fa-download"></i>
+            Download Resume
+        </a>
+    </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <i class="fas fa-check-circle"></i> Message sent — I'll be in touch soon!
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    (function () {
+        emailjs.init({
+            publicKey: "1FkKZaWPhNDeGnwyU"
+        });
+    })();
+</script>
+<script src="main.js"></script>
+
+</body>
+</html>
